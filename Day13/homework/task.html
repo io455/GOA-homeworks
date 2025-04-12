@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Example</title>
+</head>
+<body>
+  <h2>User Information Form</h2>
+
+  <form action="/submit" method="post">
+
+    <label for="fullName">Full Name:</label>
+    <input type="text" id="fullName" name="fullName" required value="" placeholder="Enter your full name">
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required value="" placeholder="Enter your email">
+    <br><br>
+
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required value="" min="1" max="120" placeholder="Enter your age">
+    <br><br>
+
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required value="" placeholder="Enter your city">
+    <br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female" required>
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other" required>
+    <label for="other">Other</label>
+    <br><br>
+
+    <label>Hobbies:</label><br>
+    <input type="checkbox" id="reading" name="hobbies" value="Reading" required>
+    <label for="reading">Reading</label><br>
+    <input type="checkbox" id="sports" name="hobbies" value="Sports" required>
+    <label for="sports">Sports</label><br>
+    <input type="checkbox" id="music" name="hobbies" value="Music" required>
+    <label for="music">Music</label>
+    <br><br>
+
+    <input type="submit" value="Submit">
+
+</form>
+
+</body>
+</html>
